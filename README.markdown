@@ -1,6 +1,6 @@
-# Sublime Text 2 plugin: Rails I18 Helper
+# Sublime Text 2 plugin: Rails I18n Helper
 
-Makes creating Rails Internationalization (I18n) easiest. Select text and create the yaml key in en.yml and key to translation 
+Makes creating Rails Internationalization (I18n) easier. Select text and create the key in en.yml and key to translation 
 
 ## Shortcut Keys
 
@@ -10,6 +10,10 @@ Makes creating Rails Internationalization (I18n) easiest. Select text and create
 
 ## How to Use
 
+you have to install yaml library for python. On linux:
+``` bash
+sudo apt-get install python-yaml
+```
 The following instructions are all done inside your Rails Apps's view (.erb, .haml) files.
 
 Select the string you wish to put into a Internationalization yml file and hit the shortcut key
@@ -28,7 +32,7 @@ you have to select "Add user" and click the shortcut key. receive:
   %i{class: 'icon-plus'}
   =t(".add_user")
 ```
-and in rails_root/confir/locales/en.yml
+and in rails_root/config/locales/en.yml
 ``` bash
 en:
   users:
